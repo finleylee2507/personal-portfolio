@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finley's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="images/Finley-logos_black.png">
+    <script src="https://kit.fontawesome.com/d192006e41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="section-wrapper">
+        <nav>
+            <img src="images/logo.png" alt="logo" id="header-logo">
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="lower-header-container">
+            <div class="lower-header-col-1">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Finley</span> <br> I love to code </h1>
+            </div>
+
+            <div class="lower-header-col-2">
+                <img src="images/header-portrait.png" alt="My portrait">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--about section-->
+<div id="about">
+
+    <div class="section-wrapper">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about-portrait.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="section-title">About Me</h1>
+                <p>An aspiring and detail-oriented computer science master’s student at Northwestern University, strong
+                    at software development and proficient in communication, teamwork, and leadership, with experiences
+                    in research and internships in the field of Software Engineering, Web Development, Computer Vision
+                    and Machine Learning. </p>
+
+                <div class="qualification-titles-tabs">
+                    <p class="tab-links active-link" onclick="opentab('skills',event)"><i class="fa-solid fa-gear"></i>
+                        Skills</p>
+                    <p class="tab-links" onclick="opentab('experience',event)"><i class="fa-solid fa-briefcase"></i>
+                        Experience</p>
+                    <p class="tab-links " onclick="opentab('education',event)"><i class="fa-solid fa-school"></i>
+                        Education</p>
+                </div>
+
+                <div class="qualification-content active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <h3 class="qualification-title">Frontend Languages</h3>
+                            HTML, CSS, JavaScript, React.JS, Vue.JS
+                        </li>
+                        <li>
+                            <h3 class="qualification-title">Backend Languages</h3>
+                            Java, Python, C++, C#, Node.JS, SQL
+                        </li>
+                        <li>
+                            <h3 class="qualification-title">Others</h3>
+                            Clarinet Performance (Advanced), Saxophone, and Piano Playing
+                            (Intermediate)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Todo: timeline structure-->
+                <div class="qualification-content" id="experience">
+
+                    <!-- work experience 1-->
+                    <div class="qualification-data">
+                        <div>
+                            <h3 class="qualification-title">Software Engineering Intern</h3>
+                            <span class="qualification-subtitle">DoubleVerify</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                Jun. 2022 - Sep. 2022
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-circle"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- work experience 2-->
+                    <div class="qualification-data">
+                        <div></div>
+                        <div>
+                            <span class="qualification-circle"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification-title">Software Development Engineer Intern</h3>
+                            <span class="qualification-subtitle">AI5YUE Technology</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                May 2021 – Aug. 2021
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--work experience 3-->
+                    <div class="qualification-data">
+                        <div>
+                            <h3 class="qualification-title">Software Development Engineer Intern</h3>
+                            <span class="qualification-subtitle">iSoftStone Technology</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                May 2019 – Jul. 2019
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-circle"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                    </div>
+
+                    <!--work experience 4-->
+                    <div class="qualification-data">
+                        <div></div>
+                        <div>
+                            <span class="qualification-circle"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification-title">Tutor for CSE 131: Introduction to Computer Science</h3>
+                            <span class="qualification-subtitle">Washington University in St. Louis</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                Aug. 2021 – Jan. 2022
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="qualification-content" id="education">
+
+                    <!-- education 1-->
+                    <div class="qualification-data">
+                        <div>
+                            <h3 class="qualification-title">Masters in Computer Science</h3>
+                            <span class="qualification-subtitle">Northwestern University</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                Sep. 2022 - Present
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-circle"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- work experience 2-->
+                    <div class="qualification-data">
+                        <div></div>
+                        <div>
+                            <span class="qualification-circle"></span>
+
+                        </div>
+                        <div>
+                            <h3 class="qualification-title">Bachelor of Science in Computer Science</h3>
+                            <span class="qualification-subtitle">Washington University in St. Louis</span>
+                            <div class="qualification-calendar">
+                                <i class="fa-regular fa-calendar"></i>
+                                Aug. 2018 - May 2022
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--portfolio-->
+<!--todo: turn into carousel -->
+
+
+<div id="portfolio">
+    <div class="section-wrapper">
+        <h1 class="section-title" id="my-projects-title">My Projects</h1>
+        <p id="my-projects-subtitle">Here are a few past course projects I've worked on. Want a demo? <a
+                href="mailto:fenglieli2024@u.northwestern.edu">Email me</a>. </p>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/personal-health-assistant.png" alt="Personal Health Assistant">
+                <div class="layer">
+                    <p>A web application that allows users to create food logs and automatically calculates caloric
+                        recommendations based on user inputted goals and weight.</p>
+                    <div class="tech-used">
+                        <span>JavaScript</span>
+                        <span>React.JS</span>
+                        <span>Node.JS</span>
+                        <span>MongoDB</span>
+                        <span>Express.JS</span>
+
+                    </div>
+                    <a href="https://github.com/finleylee2507/WUSTL-Projects/tree/master/CSE%20330/Final%20Creative%20Project"
+                       target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <p class="project-title">Personal Health Assistant</p>
+            </div>
+
+            <div class="project">
+                <img src="images/flashtastic.png" alt="Flashcard App">
+                <div class="layer">
+                    <p>A flashcard application that allows the users to create/edit/save/practice study sets. </p>
+                    <div class="tech-used">
+                        <span>JavaScript</span>
+                        <span>React.JS</span>
+                        <span>Firebase API</span>
+                    </div>
+                    <a href="https://github.com/wustlcse204/10-final-project-individual-finleylee2507"
+                       target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <p class="project-title">"Flashtastic - A Flashcard App"</p>
+
+
+            </div>
+            <div class="project">
+                <img src="images/sperm-cell-gui.png" alt="Cell Measurement GUI">
+                <div class="layer">
+                    <p>An effective, semi-automated measurement tool that allows the users to
+                        accurately measure the length of sperm cells in less than one minute. The tool utilizes advanced
+                        geometric computing algorithms such as flood-fill and cell-complex thinning.</p>
+                    <div class="tech-used">
+                        <span>MATLAB</span>
+                        <span>Python</span>
+                        <span>Algorithms</span>
+                    </div>
+                    <a href="https://github.com/finleylee2507/Sperm-Cell-Measurement-GUI" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <p class="project-title">Cell Measurement GUI</p>
+            </div>
+            <div class="project">
+                <img src="images/object-detector.png" alt="Faster R-CNN Detector">
+                <div class="layer">
+                    <p>
+                        A vision-based object detector capable of performing detection and classification on images and
+                        videos.
+                    </p>
+
+                    <div class="tech-used">
+                        <span>Python</span>
+                        <span>Tensorflow</span>
+                        <span>Computer Vision</span>
+                        <span>Machine Learning</span>
+
+                    </div>
+                    <a href="https://github.com/finleylee2507/My-Faster-RCNN-for-Object-Detection" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <p class="project-title">Faster R-CNN Detector with GAN Integration</p>
+            </div>
+
+
+        </div>
+
+        <a href="https://github.com/finleylee2507" class="btn" id="see-more-button" target="_blank">See more</a>
+    </div>
+</div>
+
+<!--contact info-->
+<div class="contact" id="contact">
+    <div class="section-wrapper">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="section-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>fenglieli2024@u.northwestern.edu</p>
+                <p><i class="fa-solid fa-phone"></i>314-203-7070</p>
+                <div class="social-icons">
+
+
+                    <a href="https://www.linkedin.com/in/finley-li/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/finleylee2507" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/finn_th3_g/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100009945043802" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+
+                </div>
+                <a href="my-resume.pdf" download class="btn download-btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
