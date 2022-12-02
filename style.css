@@ -138,9 +138,10 @@ nav ul li a:hover::after {
     align-items: center;
 }
 
-.about-col-2-row-2{
+.about-col-2-row-2 {
     margin-right: 30px;
 }
+
 .section-title {
     font-size: 60px;
     font-weight: 600;
@@ -413,10 +414,6 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
-.btn.download-btn {
-    margin-top: -10px;
-
-}
 
 .btn.download-btn, .btn.submit-btn {
     display: inline-block;

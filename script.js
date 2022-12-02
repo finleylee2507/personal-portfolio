@@ -1,4 +1,4 @@
-let tabLinks, tabContents, sideMenu, navBarItems,formSubmissionMsg
+let tabLinks, tabContents, sideMenu, navBarItems, formSubmissionMsg
 
 //initialize all variables
 const init = () => {
@@ -6,7 +6,7 @@ const init = () => {
     tabContents = document.getElementsByClassName("qualification-content")
     sideMenu = document.getElementById("nav-bar-items")
     navBarItems = document.querySelectorAll("#nav-bar-items li")
-    formSubmissionMsg=document.getElementById("form-success-msg")
+    formSubmissionMsg = document.getElementById("form-success-msg")
 
     for (let item of navBarItems) {
         item.setAttribute("aria-current", "false")
@@ -67,13 +67,13 @@ const closeMenu = () => {
     sideMenu.classList.remove("active")
 }
 
-const submitForm=(e)=>{
+const submitForm = (e) => {
     //for the purpose of this assignment, I won't be posting the form content to an external source
     e.preventDefault()
-    formSubmissionMsg.innerHTML="Message sent successfully! Thank you!"
-    setTimeout(()=>{
-        formSubmissionMsg.innerHTML=""
-    },4000)
+    formSubmissionMsg.innerHTML = "Message sent successfully! Thank you!"
+    setTimeout(() => {
+        formSubmissionMsg.innerHTML = ""
+    }, 4000)
 
 }
 
