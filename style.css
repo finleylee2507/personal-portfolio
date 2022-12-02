@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -133,8 +133,14 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.about-col-2-row-2{
+    margin-right: 30px;
+}
 .section-title {
     font-size: 60px;
     font-weight: 600;
@@ -290,7 +296,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background:rgba(0, 0, 0, 0.78);
+    background: rgba(0, 0, 0, 0.78);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -330,7 +336,7 @@ nav ul li a:hover::after {
     color: rgb(213, 213, 213);
 }
 
-.tech-used{
+.tech-used {
     /*display: grid;*/
     /*grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));*/
     display: flex;
@@ -340,7 +346,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.tech-used span{
+.tech-used span {
     font-size: 13px;
     margin: 5px;
     background: rgb(105, 104, 105);
@@ -348,6 +354,7 @@ nav ul li a:hover::after {
     border-radius: 50px;
     font-weight: 500;
 }
+
 .project:hover .layer {
     height: 100%;
 }
@@ -365,7 +372,7 @@ nav ul li a:hover::after {
     background: #ff004f;
 }
 
-#see-more-button{
+#see-more-button {
     position: relative;
     top: 50px;
 }
@@ -406,6 +413,11 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
+.btn.download-btn {
+    margin-top: -10px;
+
+}
+
 .btn.download-btn, .btn.submit-btn {
     display: inline-block;
     background: #ff004f;
@@ -440,6 +452,13 @@ form input, form textarea {
 
 }
 
+#form-success-msg {
+    display: block;
+    color: #20ab03;
+    margin-top: -30px;
+
+}
+
 
 /*media query for responsive design */
 
@@ -448,17 +467,19 @@ nav .fa-solid {
 }
 
 @media screen and (max-width: 600px) {
-    #header-logo{
+    #header-logo {
         width: 250px;
     }
 
-    #header{
+    #header {
         height: auto;
     }
-    .lower-header-container{
+
+    .lower-header-container {
         flex-direction: column-reverse;
         margin-top: 50px;
     }
+
     .lower-header-col-1 {
         /*margin-top: 100%;*/
         font-size: 16px;
@@ -466,12 +487,12 @@ nav .fa-solid {
         margin-top: 30px;
     }
 
-    .lower-header-col-2{
-        top:0;
+    .lower-header-col-2 {
+        top: 0;
         margin-top: 30px;
         width: 60%;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
 
     .lower-header-col-1 h1 {
@@ -483,7 +504,7 @@ nav .fa-solid {
         font-size: 25px;
     }
 
-    #side-menu {
+    #nav-bar-items {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -495,11 +516,11 @@ nav .fa-solid {
         transition: right 0.3s;
     }
 
-    #side-menu.active {
+    #nav-bar-items.active {
         right: 0;
     }
 
-    #side-menu li {
+    #nav-bar-items li {
         display: block;
         margin: 25px;
     }
@@ -532,15 +553,15 @@ nav .fa-solid {
         margin-right: 20px;
     }
 
-    .project-list{
+    .project-list {
         grid-template-columns: initial;
     }
 
-    .tech-used span{
+    .tech-used span {
         font-size: 8px;
     }
 
-    .layer a{
+    .layer a {
 
         font-size: 15px;
         line-height: 40px;
@@ -548,6 +569,7 @@ nav .fa-solid {
         height: 40px;
         border-radius: 50%;
     }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
